@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url(/src/media/BG.jpg);
+    background-image: url(../src/media/BG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
