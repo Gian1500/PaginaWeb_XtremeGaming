@@ -1,0 +1,23 @@
+.home{
+    
+    &__titulo{
+
+        font-size: 75px;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    
+    &__logo{
+        height: 150px;
+        width: 150px;
+        transition: transform 0.5s;
+        &:hover{
+            transform:translateY(20px);
+        }
+    }
+    
+    
+}
+

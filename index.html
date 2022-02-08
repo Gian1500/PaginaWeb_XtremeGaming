@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtreme Gaming - Tienda de Hardware</title>
+    <meta name="description" content="Tienda online de hardware, periféricos, audio y notebooks para uso profesional y gaming. Trabajamos con Asus, MSI, ROG, entre otros.">
+    <meta name="keywords" content="Tienda, Online, Argentina, Mendoza, Gaming, Hardware, Notebooks, Componentes-PC, PC, Periféricos,Ratón, Mouse, Teclado, Auricular, Placa-de-Video, Placa-Madre, Motherboard, Procesadores, Intel, AMD, Asus, MSI, ROG">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,300;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      
+    <header>
+      
+      <nav>
+        <div class="home">
+          <img class="home__logo" src="./src/media/logo.png" alt="Logo">
+          <h1 class="home__titulo"><a href="./index.html">Xtreme Gaming</a></h1>
+          <form id="barraBusqueda" class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">►</button>
+          </form>
+
+        </div>
+        <div>
+          <ul class="navegacion">
+            <li><a href="./src/pages/componentes.html">Componentes</a>
+              <ul class="navegacion__subNav">
+                <li><a href="">Placas Madre</a></li>
+                <li><a href="">Tarjetas de Video</a></li>
+                <li><a href="">Procesadores</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="./src/pages/perifericos.html">Periféricos</a>
+              <ul class="navegacion__subNav">
+                <li><a href="">Mouses</a></li>
+                <li><a href="">Teclados</a></li>
+                <li><a href="">Auriculares</a></li>
+              </ul></li>
+            <li><a href="./src/pages/notebooks.html">Notebooks</a></li>
+            <li><a href="./src/pages/servicio.html">Servicio Técnico</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      
+      
+    </header>
+
+    <h2 class="tituloProducto">Trabajamos con: </h2>
+ 
+    <div class="contenedor">
+          <div class="carousel">
+            
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./src/media/Intel-y-AMD.jpg" class="imgCarousel" alt="...">
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./src/media/msi.jpg" class="imgCarousel" alt="...">
+                   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./src/media/ROG-logo.jpg" class="imgCarousel" alt="...">
+                   
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+      </div>
+    </div>
+
+    </div>
+      
+      <h2 class="tituloProducto">Productos Destacados</h2>
+      <div class="productosDestacados">
+          <div class="productosDestacados__card">
+            <img src="./src/media/intel.jpg" alt="">
+            <h3 class="productosDestacados__titulo">Intel i9 10900k</h3>
+            <ul>
+              <li>Uso profesional/gaming</li>
+              <li>Cuenta con Hyper-Threading que favorece la ejecución de programas en simultáneo, al dividir el procesador físico en dos procesadores lógicos.</li>
+              <li>Memoria caché de 20 MB, rápida y volátil.</li>
+              <li>Procesador gráfico Intel UHD Graphics 630.</li>
+              <li>Soporta memoria RAM DDR4.</li>
+              <li>Su potencia es de 65 W.</li>
+            </ul>
+            
+          </div>
+
+          <div class="productosDestacados__card">
+            <img src="./src/media/ryzen 5.jpg" alt="">
+            <h3 class="productosDestacados__titulo">Ryzen 5 5600x</h3>
+            <ul>                        
+              <li>Uso profesional/gaming</li>
+              <li>Cuenta con Hyper-Threading que favorece la ejecución de programas en simultáneo, al dividir el procesador físico en dos procesadores lógicos.</li>
+              <li>Memoria caché de 20 MB, rápida y volátil.</li>
+              <li>Procesador gráfico Intel UHD Graphics 630.</li>
+              <li>Soporta memoria RAM DDR4.</li>
+              <li>Su potencia es de 65 W.</li>
+            </ul>
+
+          </div>
+
+          <div class="productosDestacados__card">
+            <img src="./src/media/ryzen 7.png" alt="">
+            <h3 class="productosDestacados__titulo">Ryzen 7 5800x</h3>
+            <ul>                        
+              <li>Uso profesional/gaming</li>
+              <li>Cuenta con Hyper-Threading que favorece la ejecución de programas en simultáneo, al dividir el procesador físico en dos procesadores lógicos.</li>
+              <li>Memoria caché de 20 MB, rápida y volátil.</li>
+              <li>Procesador gráfico Intel UHD Graphics 630.</li>
+              <li>Soporta memoria RAM DDR4.</li>
+              <li>Su potencia es de 65 W.</li>
+            </ul>
+            
+          </div>
+
+          <div class="productosDestacados__card">
+            <img src="./src/media/6800rx.jpg" alt="">
+            <h3 class="productosDestacados__titulo">RX 6800 RedDevil</h3>
+            <ul>                        
+              <li>Uso profesional/gaming</li>
+              <li>24 GB VRAM</li>
+              <li>GDDR6X Graphics Memory</li>
+              <li>Memory Clock: 19500 MHz Effective</li>
+              <li>Memory Bit Width: 384 Bit</li>
+              <li>750 Watt o mas de fuente de alimentacion.</li>
+            </ul>
+            
+          </div>
+
+          <div class="productosDestacados__card">
+            <img src="./src/media/3080.jpg" alt="">
+            <h3 class="productosDestacados__titulo">RTX 3080 MSI TRIO</h3>
+            <ul>                        
+              <li>Uso profesional/gaming</li>
+              <li>24 GB VRAM</li>
+              <li>GDDR6X Graphics Memory</li>
+              <li>Memory Clock: 19500 MHz Effective</li>
+              <li>Memory Bit Width: 384 Bit</li>
+              <li>750 Watt o mas de fuente de alimentacion.</li>
+            </ul>
+            
+          </div>
+
+          <div class="productosDestacados__card">
+            <img src="./src/media/rtx3090.jpg" alt="">
+            <h3 class="productosDestacados__titulo">RTX 3090 XC3</h3>
+            <ul>                        
+              <li>Uso profesional/gaming</li>
+              <li>24 GB VRAM</li>
+              <li>GDDR6X Graphics Memory</li>
+              <li>Memory Clock: 19500 MHz Effective</li>
+              <li>Memory Bit Width: 384 Bit</li>
+              <li>750 Watt o mas de fuente de alimentacion.</li>
+            </ul>
+            
+          </div>
+          
+      </div>
+    </div>
+    
+    
+     
+
+    <footer>
+
+      <div class="redes">
+          <h2 class="redes__titulo">Redes</h2>
+          <ul class="redes__lista">
+            <a href="#"><span class="iconify" data-icon="bi:facebook" data-width="50"></span></a>
+            <a href="#"><span class="iconify" data-icon="bi:twitter" data-width="50"></span></a>
+            <a href="#"> <span class="iconify" data-icon="bi:instagram" data-width="50"></span></a>     
+            <a href="mailto:gianuniversidad@gmail.com"><span class="iconify" data-icon="ant-design:mail-outlined" data-width="50"></span></a>
+          </ul>
+      </div>
+      <div class="contacto">
+          <h2 class="contacto__titulo">Contáctanos</h2>
+
+          <form action="post">
+              <div>
+                  <input type="text" name="" placeholder="Escriba su nombre">
+              </div>
+              
+              <div>
+                  <input type="email" name="" placeholder="Ingrese su correo">
+              </div>
+      
+              <div>
+                  <textarea name="" id="30" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+              </div>
+
+              <div>
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Vaciar consulta">
+              </div>
+          </form>
+      </div>  
+      <div class="maps">
+          <h2 class="maps__titulo">Ubícanos </h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26800.71801475255!2d-68.83901440000001!3d-32.8957952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1642251568997!5m2!1ses!2sar"  allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    
+      
+    </footer>
+        
+  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</html>

@@ -1,0 +1,67 @@
+.gridProductos{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap:25px;
+    justify-items: center;
+    justify-content: center;
+    @include tablet{
+        
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        gap:10px;
+        justify-items: center;
+        justify-content: center;
+    
+    }
+
+    @include movil{
+       
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(1, auto);
+        gap:10px;
+        justify-items: center;
+        justify-content: center;
+            
+         
+    }
+    
+    @for $i from 1 through 3{
+        &__imagen--#{$i}{
+            height: 200px * $i;
+            width: 300px * $i;
+        }
+    }
+    
+    &__articulo{
+        display: grid;
+        justify-items: center;
+        transition: transform 1s;
+
+        &:hover{
+            transform: scale3d(1.1,1.1,1.1);
+        }
+        
+    }
+    
+    
+    &__titulo{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        color:whitesmoke;
+    
+    }
+    
+    &__descripcion{
+        font-size: 15px;
+        text-align: left;
+        color:whitesmoke;
+        list-style: none;
+    }
+    
+    
+    
+}

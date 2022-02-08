@@ -1,0 +1,42 @@
+.navegacion{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 100px;
+
+
+    & li{
+        display: inline-block;
+        border: 3px groove black;
+        background-color: rgb(41, 4, 75);
+        padding: 5px 10px;
+        transition: transform 0.5s;
+    }
+    & li:hover{
+        transform:translateY(-10px);
+    }
+
+     
+    & li:hover ul{
+        display:block;
+    }
+    
+    .navegacion__subNav{
+        display: none;
+        position: absolute;
+
+        & li{
+            display: block;
+            position: relative;
+            top: 5px;
+            right: 45px;
+        }
+    }
+    
+    
+   
+}
