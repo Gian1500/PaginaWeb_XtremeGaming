@@ -8,7 +8,7 @@
     <meta name="description" content="Los periféricos ideales para tu PC están acá, Logitech, Redragon y Razer. Teclados, mouses y auriculares gaming">
     <meta name="keywords" content="Logitech, Razer, Redragon, Teclado, Mouse, Ratón, Auricular, Gaming">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/estilos.css">
+    <link rel="stylesheet" href="../../css/estilos-sass.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,300;1,600;1,700;1,900&display=swap" rel="stylesheet">
@@ -20,8 +20,9 @@
   <header>
       
     <nav>
+      
       <div class="home">
-        <img class="home__logo" src="../media/logo.png" alt="Logo">
+        <a href="index.html"><img class="home__logo" src="../media/logo.png" alt="Logo"></a>
         <h1 class="home__titulo"><a href="../../index.html">Xtreme Gaming</a></h1>
         <form id="barraBusqueda" class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
@@ -29,33 +30,24 @@
         </form>
 
       </div>
+
       <div>
         <ul class="navegacion">
-          <li><a href="../pages/componentes.html">Componentes</a>
-            <ul class="navegacion__subNav">
-              <li><a href="">Placas Madre</a></li>
-              <li><a href="">Tarjetas de Video</a></li>
-              <li><a href="">Procesadores</a></li>
-            </ul>
-          </li>
-          
-          <li><a href="../pages/perifericos.html">Periféricos</a>
-            <ul class="navegacion__subNav">
-              <li><a href="">Mouses</a></li>
-              <li><a href="">Teclados</a></li>
-              <li><a href="">Auriculares</a></li>
-            </ul></li>
-          <li><a href="../pages/notebooks.html">Notebooks</a></li>
-          <li><a href="../pages/servicio.html">Servicio Técnico</a></li>
+          <li><a href="./src/pages/componentes.html">Componentes</a></li>
+          <li><a href="./src/pages/perifericos.html">Periféricos</a></li>
+          <li><a href="./src/pages/notebooks.html">Notebooks</a></li>
+          <li><a href="./src/pages/servicio.html">Servicio Técnico</a></li>
 
         </ul>
       </div>
+
     </nav>
     
     
   </header>
 
   <div class="contenedorPrincipal">
+
     <div class="sidebar d-flex flex-column col-lg-2 col-lg-2 col-md-2 col-sm-2 flex-shrink-0 p-3 text-white" style="height: max-content;">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
         <span class="iconify" data-icon="fa-solid:filter"></span>
@@ -66,140 +58,148 @@
         <li class="nav-item">
           <a href="#" class="nav-link active" aria-current="page">
             <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-            Razer
+            Mouse
           </a>
         </li>
         <li>
           <a href="#" class="nav-link text-white">
             <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-            Logitech
+            Teclado
           </a>
         </li>
         <li>
           <a href="#" class="nav-link text-white">
             <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-            Redragon
+            Auricular
           </a>
         </li>
       </ul>
     </div>
+
+    <section class="gridProductos">
+        
+      <article class="gridProductos__articulo">
+        <img class="gridProductos__imagen" src="../media/razerNaga.jpg" alt="producto">
+        <p class="gridProductos__titulo">Razer Naga X</p>
+        <ul>
+          <p class="gridProductos__descripcion">Caracteristicas:</p>
+            <li class="gridProductos__descripcion">Alámbrico</li>                            
+            <li class="gridProductos__descripcion">Sensor óptico Razer 5G de 18 000 DPI</li>
+            <li class="gridProductos__descripcion">Peso aproximado: 85 g</li>
+            <li class="gridProductos__descripcion">10 botones programables</li>
+            
+        </ul>
+      </article>
+
+      <article class="gridProductos__articulo">
+        <img class="gridProductos__imagen" src="../media/razerAuri.jpg" alt="producto">
+        <p class="gridProductos__titulo">Razer Nari Ultimate</p>
+        <ul>
+          <p class="gridProductos__descripcion">Caracteristicas:</p>                            
+            <li class="gridProductos__descripcion">Alcance inalámbrico de 12 m.</li>
+            <li class="gridProductos__descripcion">Batería dura 20 h.</li>
+            <li class="gridProductos__descripcion">Micrófono incorporado.</li>
+            <li class="gridProductos__descripcion">Sensibilidad 107 dB
+            <li class="gridProductos__descripcion">Cancelación de ruido: No</li>
+            <li class="gridProductos__descripcion">Impedancia 32 Ω</li>
+        </ul>
+      </article>
+
+      <article class="gridProductos__articulo">
+        <img class="gridProductos__imagen" src="../media/razerTeclado.jpg" alt="producto">
+        <p class="gridProductos__titulo">Razer Huntsman Mini</p>
+        <ul>
+          <p class="gridProductos__descripcion">Caracteristicas:</p>                            
+            <li class="gridProductos__descripcion">Tipo de switch: Razer Purple</li>
+            <li class="gridProductos__descripcion">QWERTY</li>
+            <li class="gridProductos__descripcion">Opto-Mecánico</li>
+            <li class="gridProductos__descripcion">Alámbrico USB-C</li>
+            
+        </ul>
+      </article>
+
+      <article class="gridProductos__articulo">
+        <img class="gridProductos__imagen" src="../media/logitechMouse.jpg" alt="producto">
+        <p class="gridProductos__titulo">Logitech G Series Hero</p>
+        <ul>
+          <p class="gridProductos__descripcion">Caracteristicas:</p>                            
+            <li class="gridProductos__descripcion">  Alámbrico</li>
+            <li class="gridProductos__descripcion">Sensibilidad entre 200 y 16.000 dpi</li>
+            <li class="gridProductos__descripcion">Sistema de cinco pesas de 3,6 </li>
+            <li class="gridProductos__descripcion">6 botones programables</li>
+            
+        </ul>
+      </article>
+
+      <article class="gridProductos__articulo">
+        <img class="gridProductos__imagen" src="../media/logitechAuri.jpg" alt="producto">
+        <p class="gridProductos__titulo">Logitech G PRO</p>
+        <ul>
+          <p class="gridProductos__descripcion">Caracteristicas:</p>                            
+            <li class="gridProductos__descripcion">Inalámbrico</li>
+            <li class="gridProductos__descripcion">Bateria dura 20h</li>
+            <li class="gridProductos__descripcion">Micrófono incorporado</li>
+            <li class="gridProductos__descripcion">Sensibilidad 91.7 dB</li>
+            <li class="gridProductos__descripcion">Impedancia 32 Ω</li>
+        </ul>
+      </article>
       
-  
-      <section class="gridProductos">
-          
-          <article class="gridProductos__articulo">
-            <img class="gridProductos__imagen" src="../media/razerNaga.jpg" alt="producto">
-            <p class="gridProductos__titulo">Razer Naga X</p>
-            <ul>
-              <p class="gridProductos__descripcion">Caracteristicas:</p>
-                <li class="gridProductos__descripcion">Alámbrico</li>                            
-                <li class="gridProductos__descripcion">Sensor óptico Razer 5G de 18 000 DPI</li>
-                <li class="gridProductos__descripcion">Peso aproximado: 85 g</li>
-                <li class="gridProductos__descripcion">10 botones programables</li>
-                
-            </ul>
-          </article>
-          <article class="gridProductos__articulo">
-            <img class="gridProductos__imagen" src="../media/razerAuri.jpg" alt="producto">
-            <p class="gridProductos__titulo">Razer Nari Ultimate</p>
-            <ul>
-              <p class="gridProductos__descripcion">Caracteristicas:</p>                            
-                <li class="gridProductos__descripcion">Alcance inalámbrico de 12 m.</li>
-                <li class="gridProductos__descripcion">Batería dura 20 h.</li>
-                <li class="gridProductos__descripcion">Micrófono incorporado.</li>
-                <li class="gridProductos__descripcion">Sensibilidad 107 dB
-                <li class="gridProductos__descripcion">Cancelación de ruido: No</li>
-                <li class="gridProductos__descripcion">Impedancia 32 Ω</li>
-            </ul>
-          </article>
-          <article class="gridProductos__articulo">
-            <img class="gridProductos__imagen" src="../media/razerTeclado.jpg" alt="producto">
-            <p class="gridProductos__titulo">Razer Huntsman Mini</p>
-            <ul>
-              <p class="gridProductos__descripcion">Caracteristicas:</p>                            
-                <li class="gridProductos__descripcion">Tipo de switch: Razer Purple</li>
-                <li class="gridProductos__descripcion">QWERTY</li>
-                <li class="gridProductos__descripcion">Opto-Mecánico</li>
-                <li class="gridProductos__descripcion">Alámbrico USB-C</li>
-                
-            </ul>
-          </article>
-          <article class="gridProductos__articulo">
-            <img class="gridProductos__imagen" src="../media/logitechMouse.jpg" alt="producto">
-            <p class="gridProductos__titulo">Logitech G Series Hero</p>
-            <ul>
-              <p class="gridProductos__descripcion">Caracteristicas:</p>                            
-                <li class="gridProductos__descripcion">  Alámbrico</li>
-                <li class="gridProductos__descripcion">Sensibilidad entre 200 y 16.000 dpi</li>
-                <li class="gridProductos__descripcion">Sistema de cinco pesas de 3,6 </li>
-                <li class="gridProductos__descripcion">6 botones programables</li>
-               
-            </ul>
-          </article>
-          <article class="gridProductos__articulo">
-            <img class="gridProductos__imagen" src="../media/logitechAuri.jpg" alt="producto">
-            <p class="gridProductos__titulo">Logitech G PRO</p>
-            <ul>
-              <p class="gridProductos__descripcion">Caracteristicas:</p>                            
-                <li class="gridProductos__descripcion">Inalámbrico</li>
-                <li class="gridProductos__descripcion">Bateria dura 20h</li>
-                <li class="gridProductos__descripcion">Micrófono incorporado</li>
-                <li class="gridProductos__descripcion">Sensibilidad 91.7 dB</li>
-                <li class="gridProductos__descripcion">Impedancia 32 Ω</li>
-            </ul>
-          </article>
-          <article class="gridProductos__articulo">
-            <img class="gridProductos__imagen" src="../media/redragon.jpg" alt="producto">
-            <p class="gridProductos__titulo">Redragon KUMARA K552</p>
-            <ul>
-              <p class="gridProductos__descripcion">Caracteristicas:</p>                            
-                <li class="gridProductos__descripcion">Tipo de switch: Outemu Blue</li>
-                <li class="gridProductos__descripcion">QWERTY</li>
-                <li class="gridProductos__descripcion">Mecánico</li>
-                <li class="gridProductos__descripcion">Alámbrico Tipo USB</li>
-                
-            </ul>
-          </article>
-      </section>
+      <article class="gridProductos__articulo">
+        <img class="gridProductos__imagen" src="../media/redragon.jpg" alt="producto">
+        <p class="gridProductos__titulo">Redragon KUMARA K552</p>
+        <ul>
+          <p class="gridProductos__descripcion">Caracteristicas:</p>                            
+            <li class="gridProductos__descripcion">Tipo de switch: Outemu Blue</li>
+            <li class="gridProductos__descripcion">QWERTY</li>
+            <li class="gridProductos__descripcion">Mecánico</li>
+            <li class="gridProductos__descripcion">Alámbrico Tipo USB</li>
+            
+        </ul>
+      </article>
+
+    </section>
+
   </div>
 
   <footer>
 
-      <div class="redes">
-          <h2 class="redes__titulo">Redes</h2>
-          <ul class="redes__lista">
-            <a href="#"><span class="iconify" data-icon="bi:facebook" data-width="50"></span></a>
-            <a href="#"><span class="iconify" data-icon="bi:twitter" data-width="50"></span></a>
-            <a href="#"> <span class="iconify" data-icon="bi:instagram" data-width="50"></span></a>     
-            <a href="mailto:gianuniversidad@gmail.com"><span class="iconify" data-icon="ant-design:mail-outlined" data-width="50"></span></a>
-          </ul>
-      </div>
-      <div class="contacto">
-          <h2 class="contacto__titulo">Contáctanos</h2>
+    <div class="redes">
+      <h2 class="redes__titulo">Redes</h2>
+      <ul class="redes__lista">
+        <a href="#"><span class="iconify" data-icon="bi:facebook" data-width="50"></span></a>
+        <a href="#"><span class="iconify" data-icon="bi:twitter" data-width="50"></span></a>
+        <a href="#"> <span class="iconify" data-icon="bi:instagram" data-width="50"></span></a>     
+        <a href="mailto:gianuniversidad@gmail.com"><span class="iconify" data-icon="ant-design:mail-outlined" data-width="50"></span></a>
+      </ul>
+    </div>
 
-          <form action="post">
-              <div>
-                  <input type="text" name="" placeholder="Escriba su nombre">
-              </div>
-              
-              <div>
-                  <input type="email" name="" placeholder="Ingrese su correo">
-              </div>
-      
-              <div>
-                  <textarea name="" id="30" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
-              </div>
+    <div class="contacto">
+      <h2 class="contacto__titulo">Contáctanos</h2>
 
-              <div>
-                  <input type="submit" value="Enviar">
-                  <input type="reset" value="Vaciar consulta">
-              </div>
-          </form>
-      </div>
-      <div class="maps">
-          <h2 class="maps__titulo">Ubícanos </h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26801.49269113306!2d-68.84554830000002!3d-32.8932347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses!2sar!4v1639610684332!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+      <form action="post">
+          <div>
+              <input type="text" name="" placeholder="Escriba su nombre">
+          </div>
+          
+          <div>
+              <input type="email" name="" placeholder="Ingrese su correo">
+          </div>
+  
+          <div>
+              <textarea name="" id="30" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+          </div>
+
+          <div>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Vaciar consulta">
+          </div>
+      </form>
+    </div>
+    
+    <div class="maps">
+        <h2 class="maps__titulo">Ubícanos </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26801.49269113306!2d-68.84554830000002!3d-32.8932347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses!2sar!4v1639610684332!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+    </div>
       
   </footer>
 
